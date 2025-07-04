@@ -29,7 +29,7 @@ export default function Home() {
     setMessages((messages) => [...messages, message]);
   
     try {
-      const res = await fetch('http://54.89.163.204:8000/chat', {
+      const res = await fetch('https://54.89.163.204:8000/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: question, session_id: session }),
