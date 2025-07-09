@@ -29,7 +29,7 @@ export default function Home() {
     setMessages((messages) => [...messages, message]);
   
     try {
-      const res = await fetch('https://e4y135nd2c.execute-api.us-east-1.amazonaws.com/prod/chat', {
+      const res = await fetch('https://g9uw4mp5bf.execute-api.us-east-1.amazonaws.com/prod/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: question, session_id: session }),
